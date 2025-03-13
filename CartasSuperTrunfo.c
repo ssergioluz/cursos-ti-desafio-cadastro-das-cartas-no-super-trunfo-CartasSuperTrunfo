@@ -1,22 +1,69 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+int main(){
+    //a seguir as funções e variáveis referentes a primeira carta.
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    char estado = 'A'; //função char para informar a letra da carta que representa o estado.
+    char codigo[4] ="A01"; //função char para informar o código da carta.
+    char cidade[20]; //função char para comportar os caracteres que nomeiam a cidade.
+    int populacao; //função int para comportar o número da população.
+    float area; //função float para comportar a extensão do território da cidade.
+    float pib; //função float para alocar o pib.
+    int pontos_turisticos; //função int para alocar a quantidade de pontos turísticos
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    //a seguir as funções e variáveis referentes a segunda carta carta
 
-    return 0;
+    char estado2 = 'B'; //função char para informar a letra da carta que representa o estado diferenciada da primeira pelo digito 2.
+    char codigo2[4] ="B02"; //função char para informar o código da carta diferenciada da primeira pelo digito 2.
+    char cidade2[20]; //função char para comportar os caracteres que nomeiam a cidade diferenciada da primeira pelo digito 2.
+    int populacao2; //função int para comportar o número da população diferenciada da primeira pelo digito 2.
+    float area2; //função float para comportar a extensão do território da cidade diferenciada da primeira pelo digito 2.
+    float pib2; //função float para alocar o pib diferenciada da primeira pelo digito 2.
+    int pontos_turisticos2; //função int para alocar a quantidade de pontos turísticos diferenciada da primeira pelo digito 2.
+    
+  
+   //a seguir os comandos de entrada e saída do terminal referentes a primeira carta.
+
+   printf("Informe a cidade: \n"); //função que pede que o usuário informa qual a cidade.
+   scanf("%s", &cidade); //função para captar o dado inserido pelo usuário.
+
+   printf("Informe a população: \n"); //função que pede que o usuário informe a população.
+   scanf("%d", &populacao); //função para captar o dado inserido pelo usuário.
+
+   printf("Informe a área: \n"); //função que pede que o usuário informe a área.
+   scanf("%f", &area); //função para captar o dado inserido pelo usuário.
+
+   printf("Informe o PIB: \n"); //função que pede que o usuário informe o pib.
+   scanf("%f", &pib); //função para captar o dado inserido pelo usuário.
+
+   printf("Informe quantos pontos turísticos: \n"); //função que pede que o usuário informe os pontos turísticos.
+   scanf("%f", &pontos_turisticos); //função para captar o dado inserido pelo usuário.
+
+   printf(" - Estado: %c\n - Codigo: %s\n - Cidade: %s\n", estado, codigo, cidade); //função para o sistema imprimir no terminal os dados da carta referente ao estado, o código e a cidade. 
+
+   printf(" - População: %d\n - Area: %f\n - PIB: %f\n - Total de Pontos Turísticos: %d\n", populacao, area, pib, pontos_turisticos); //função para o sistema imprimir no terminal os dados da carta referente a população, área, pib e total de pontos turísticos.
+
+   
+
+   //a seguir os comandos de entrada e saída do terminal referentes a segunda carta.
+
+   printf("Informe a cidade: \n"); //função que pede que o usuário informa qual a segunda cidade.
+   scanf("%s", &cidade2); //função para captar o dado inserido pelo usuário da segunda cidade.
+
+   printf("Informe a população: \n"); //função que pede que o usuário informe a população da segunda cidade.
+   scanf("%d", &populacao2); //função para captar o dado inserido pelo usuário da segunda cidade.
+
+   printf("Informe a área: \n"); //função que pede que o usuário informe a área da segunda cidade.
+   scanf("%f", &area2); //função para captar o dado inserido pelo usuário da segunda cidade.
+
+   printf("Informe o PIB: \n"); //função que pede que o usuário informe o pib da segunda cidade.
+   scanf("%f", &pib2); //função para captar o dado inserido pelo usuário da segunda cidade.
+
+   printf("Informe quantos pontos turísticos: \n"); //função que pede que o usuário informe os pontos turísticos da segunda cidade.
+   scanf("%f", &pontos_turisticos2); //função para captar o dado inserido pelo usuário da segunda cidade.
+
+   printf(" - Estado: %c\n - Codigo: %s\n - Cidade: %s\n", estado2, codigo2, cidade2); //função para o sistema imprimir no terminal os dados da segunda carta referente ao estado, o código e a cidade
+   printf(" - População: %d\n - Area: %f\n - PIB: %f\n - Total de Pontos Turísticos: %d\n", populacao2, area2, pib2, pontos_turisticos2); //função para o sistema imprimir no terminal os dados da carta referente a população, área, pib e total de pontos turísticos da segunda cidade.
+   
+
 }
